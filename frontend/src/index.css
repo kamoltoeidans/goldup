@@ -1,0 +1,10 @@
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: 'Sarabun', system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  background: #f5f5f5;
+  color: #1a1a1a;
+}
+#root { min-height: 100vh; }
