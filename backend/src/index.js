@@ -1,4 +1,5 @@
 import 'dotenv/config'
+import cors from 'cors'
 import express from 'express'
 import cron from 'node-cron'
 import priceRouter from './routes/price.js'
@@ -9,6 +10,7 @@ import { runAlertJob } from './cron/alertJob.js'
 import { config } from './config.js'
 
 const app = express()
+app.use(cors())
 app.use(express.json())
 
 app.use('/api/price', priceRouter)
