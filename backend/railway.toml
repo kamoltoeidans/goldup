@@ -1,0 +1,11 @@
+# Railway config for monorepo backend deployment
+# Set Root Directory to "backend" in Railway Service Settings so Railpack builds from this folder.
+
+[build]
+# Use Railpack (default) for Node.js detection
+builder = "RAILPACK"
+
+[deploy]
+startCommand = "npm start"
+healthcheckPath = "/health"
+healthcheckTimeout = 30
